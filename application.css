@@ -1,0 +1,50 @@
+.bg {
+	-fx-background-color: #213a57;
+}
+
+.butt {
+	-fx-background-color: #80ed99;
+	-fx-background-radius: 100px;
+}
+
+.textinput {
+	-fx-background-color: #3d3d3d;
+	-fx-background-radius: 20px;
+	-fx-text-fill: white;
+}
+
+.tapaksulaiman {
+	-fx-background-color: transparent;
+}
+
+.pic {
+	-fx-background-color: transparent;
+}
+
+.choice-box {
+	-fx-background-color: #3d3d3d;
+	-fx-background-radius: 50px;
+}
+
+.lblStatus {
+	-fx-background-color: transparent;
+	-fx-text-fill: white;
+}
+
+.scroll-pane {
+    -fx-background: transparent; /* Change this to your desired color */
+    -fx-border-color: transparent; /* Optional: To remove the border */
+}
+
+.scroll-pane .viewport {
+    -fx-background: transparent; /* Change this to your desired color */
+}
+
+.vbox {
+	-fx-background-color: transparent;
+}
+
+.hbox {
+	-fx-background-color: #3d3d3d;
+	-fx-background-radius: 10px;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="751.0" styleClass="bg" stylesheets="@application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ChoiceBox fx:id="choice" layoutX="241.0" layoutY="219.0" prefHeight="26.0" prefWidth="166.0" styleClass="choiceBox" stylesheets="@application.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <Label fx:id="sort" layoutX="252.0" layoutY="224.0" stylesheets="@application.css" text="Sort" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ScrollPane layoutX="11.0" layoutY="258.0" prefHeight="327.0" prefWidth="727.0" style="-fx-background-color: transparent;" styleClass="scrollpane" stylesheets="@application.css">
+         <content>
+            <VBox fx:id="ListContainer" prefHeight="328.0" prefWidth="706.0" styleClass="vbox" stylesheets="@application.css">
+               <!-- Task entries will be added here dynamically -->
+            </VBox>
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" layoutY="177.0" prefHeight="42.0" prefWidth="751.0" spacing="9.0">
+         <children>
+            <TextField fx:id="addTask" prefHeight="26.0" prefWidth="222.0" promptText="  Add a new task" styleClass="textinput" stylesheets="@application.css">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Button fx:id="addButt" alignment="TOP_CENTER" contentDisplay="CENTER" onMouseClicked="#handleAddButtonClick" prefHeight="42.0" prefWidth="43.0" styleClass="butt" stylesheets="@application.css" text="+" textFill="#213a57">
+               <font>
+                  <Font name="History of Wawa" size="40.0" />
+               </font>
+               <padding>
+                  <Insets top="-15.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="-1.0" layoutY="55.0" prefHeight="100.0" prefWidth="751.0" spacing="10.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="186.0" text="Tasks Done" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCounter" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #80ed99; -fx-background-radius: 100px;" text="0/0" textFill="#213a57">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" prefHeight="32.0" prefWidth="751.0" text="To-Do List: Stay Productive! by Programmers United TM" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
